@@ -1,0 +1,276 @@
+@import "tailwindcss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Averia';
+  font-weight: 400;
+  background: #f8f8f8;
+  color: #222222;
+}
+html{
+  scroll-behavior: smooth;
+}
+.autos-center {
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 10px;
+} 
+
+.auto-center {
+  margin: auto;
+  padding: 10px 10px;
+}
+
+.cursor-change:hover {
+  cursor: url('fonts/cursor.cur'), auto;
+}
+
+.transition {
+  transition: 1s ease-in-out;
+}
+
+.bg-ole {
+  background-image: url('assets/ole.png');
+  /* background-image: url('assets/sdsd.png'); */
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.center-top-bottom {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.left-line {
+  writing-mode: vertical-lr;
+  text-orientation: mixed;
+}
+
+.announcement {
+  writing-mode: horizontal-tb;
+  left: 10%;
+  top: 20%;
+  transform: unset;
+  padding: 0 35px;
+}
+
+.scroll-btn {
+  left: 10%;
+  padding: 0 35px;
+  transform: unset;
+}
+
+.seperator {
+  position: relative;
+}
+
+.seperator::after {
+  position: absolute;
+  content: "";
+  height: 55%;
+  top: 20vh;
+  left: 10px;
+  background: #222222;
+  width: 1px;
+}
+
+@media (max-width: 640px) {
+  .scroll-btn {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+
+.latest-works {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  font-weight: 600;
+}
+
+.works-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.work-card {
+  display: block;
+  padding: 2rem;
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  color: inherit;
+}
+
+.work-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.work-number {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.work-type {
+  display: block;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.work-title {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+.view-more {
+  text-align: center;
+}
+
+.view-more a {
+  display: inline-flex;
+  align-items: center;
+  font-size: 1.1rem;
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.view-more a:hover {
+  color: #555;
+}
+
+.view-more a span {
+  margin-left: 0.5rem;
+  text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+  }
+  
+  .works-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+
+.cta-section {
+  background-color: #000;
+  color: #fff;
+  padding: 6rem 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.cta-content {
+  max-width: 800px;
+  text-align: center;
+}
+
+.cta-heading {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+.highlight {
+  color: #ff4d4d; /* Or your brand accent color */
+  display: block;
+}
+
+.cta-text {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  margin-bottom: 2.5rem;
+  opacity: 0.9;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta-button {
+  background-color: #ff4d4d; /* Matching accent color */
+  color: white;
+  border: none;
+  padding: 1rem 3rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.cta-button:hover {
+  background-color: #ff3333;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(255, 77, 77, 0.3);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .cta-heading {
+    font-size: 2.2rem;
+  }
+  
+  .cta-text {
+    font-size: 1.1rem;
+  }
+  
+  .cta-section {
+    padding: 4rem 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .cta-heading {
+    font-size: 1.8rem;
+  }
+  
+  .cta-button {
+    padding: 0.9rem 2rem;
+    font-size: 1rem;
+    width: 100%;
+  }
+}
