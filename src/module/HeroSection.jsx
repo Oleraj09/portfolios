@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const HeroSection = () => {
     return (
         <>
-            <div className="h-[90vh] bg-[#f8f8f8] bg-ole">
+            <div className="h-[100vh] bg-[#f8f8f8] bg-ole" id="home">
                 <div className="relative h-[80vh] center-top-bottom">
                     <div className="relative h-full container auto-center">
                         <div className="relative h-[75vh] left-0 top-[10%] left-line">

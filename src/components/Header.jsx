@@ -16,6 +16,11 @@ const Navbar = () => {
             setMobileMenuOpen(false);
         }, 200);
     };
+    const handleLinkClickContact = () => {
+        setTimeout(() => {
+            setMobileMenuOpen(false);
+        }, 200);
+    };
 
     return (
         <>
@@ -31,6 +36,7 @@ const Navbar = () => {
                         <div className="hidden sm:block">
                             <nav>
                                 <ul className="flex gap-x-8 text-[16px]">
+                                    <li><a href="/#home" className="cursor-change">Home</a></li>
                                     <li><a href="/#about" className="cursor-change">About Me</a></li>
                                     <li><Link to="/blogs" className="cursor-change">Blogs</Link></li>
                                     <li><Link to="/portfolios" className="cursor-change">Portfolio</Link></li>
@@ -42,7 +48,7 @@ const Navbar = () => {
 
                     {/* Hire Me Button */}
                     <div className="hidden sm:flex cursor-change items-center text-[18px] gap-x-[10px] border-[1px] rounded-full w-[140px] justify-center">
-                        <a href="#hire" className="cursor-change">Hire Me <FontAwesomeIcon icon={faArrowTrendUp} /></a>
+                        <a href="#contact" className="cursor-change" onClick={handleLinkClickContact}>Hire Me <FontAwesomeIcon icon={faArrowTrendUp} /></a>
                     </div>
 
                     {/* Mobile Menu Button */}
@@ -69,7 +75,7 @@ const Navbar = () => {
                         <li><a href="#service" onClick={handleLinkClick}>Services</a></li>
                         <li><a href="#blog" onClick={handleLinkClick}>Blog</a></li>
                         <li className="border-[1px] rounded-full w-[140px] flex items-center justify-center">
-                            <a href="#hire" onClick={handleLinkClick} className="flex items-center gap-x-2">
+                            <a href="#contact" onClick={handleLinkClickContact} className="flex items-center gap-x-2">
                                 Hire Me <FontAwesomeIcon icon={faArrowTrendUp} />
                             </a>
                         </li>
