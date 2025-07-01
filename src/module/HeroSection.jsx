@@ -6,7 +6,7 @@ const HeroSection = () => {
         <>
             <div className="h-[100vh] bg-[#f8f8f8] bg-ole" id="home">
                 <div className="relative h-[80vh] center-top-bottom">
-                    <div className="relative h-full container auto-center">
+                    <div className="text-flo relative h-full container auto-center">
                         <div className="relative h-[75vh] left-0 top-[10%] left-line">
                             <p className="designation absolute top-10 left-0">Web Developer</p>
                             <div className="seperator"></div>
@@ -25,7 +25,7 @@ const HeroSection = () => {
                             </div>
                             <div className="say-hello flex flex-col">
                                 <h1 className="hello text-[75px] sm:text-[120px] text-center sm:text-left">Hello</h1>
-                                <p className="text-center sm:text-left">— Wordpress Developer! Also React and Laravel Expert.</p>
+                                <p className="stroke text-center sm:text-left">— Wordpress Developer! Also React and Laravel Expert.</p>
                             </div>
                         </div>
                         <div className="absolute scroll-btn bottom-[0px]">
