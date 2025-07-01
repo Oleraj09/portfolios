@@ -37,7 +37,7 @@ const Vission = () => {
         {showForm && (
           <>
             <h1 className="text-center text-[24px] uppercase underline">Make A Appointment</h1>
-            <form className="mt-10 space-y-6 py-8 px-2 px-8 rounded-2xl text-left animate-fade-in">
+            <form className="mt-10 space-y-6 py-8 px-2 px-2 md:px-8 rounded-2xl text-left animate-fade-in">
               <div className="pb-4">
                 <label className="block mb-2 text-sm font-medium text-gray-700">Your Name</label>
                 <input
